@@ -1,0 +1,329 @@
+/*Ecran XL*/
+@media screen and (min-width: 1280px) {
+  html,
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .left-panel {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin-left: 5px;
+    z-index: 1;
+  }
+
+  .right-panel {
+    display: flex;
+    flex: 1.4;
+    background-image: url("../img/lapinator.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+  }
+
+  .nav-logo {
+    height: 70px;
+    width: 70px;
+  }
+
+  .lp-nav {
+    display: flex;
+    margin: 5px;
+    height: 70px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .lp-nav ul {
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    align-content: center;
+  }
+
+  .lp-nav li {
+    list-style: none;
+  }
+
+  li a {
+    color: rgb(50, 45, 66);
+    text-decoration: none;
+  }
+
+  li.active {
+    border-bottom: 3px solid #0066ff;
+    color: #0066ff;
+  }
+
+  li a:hover {
+    color: #0066ff;
+  }
+
+  .fa-bars {
+    color: transparent;
+  }
+
+  .lpntr-title h1 {
+    width: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 48px;
+  }
+
+  .lpntr-title {
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    align-content: center;
+  }
+
+  .lpntr-title p {
+    margin: 0 0 50px 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .lpntr-title a {
+    color: #666;
+    text-decoration: none;
+    font-style: italic;
+  }
+
+  .flex-container {
+    display: flex;
+  }
+
+  .form-container {
+    background: white;
+    width: 110%;
+    height: 58px;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0px 2px 50px 0px rgb(223, 223, 223);
+  }
+
+  .form {
+    width: 110%;
+    height: 42px;
+    display: flex;
+  }
+
+  .input-session {
+    opacity: 0.5;
+    height: 58px;
+    width: 90%;
+    border: 0px solid;
+    font-size: 18px;
+    background-color: transparent;
+    color: gray;
+  }
+
+  .btn-session {
+    height: 50px;
+    margin: 4px;
+    border: 0px solid;
+    border-radius: 29px;
+    text-align: center;
+    width: 200px;
+    background-color: #66ffcc;
+    color: white;
+    font-weight: bold;
+  }
+
+  .btn-session:hover {
+    height: 50px;
+    margin: 4px;
+    border: 0px solid;
+    border-radius: 29px;
+    text-align: center;
+    width: 200px;
+    background-color: #29e6a7;
+    color: white;
+    font-weight: bold;
+  }
+
+  .fa-sign-in-alt {
+    color: gray;
+    margin: 20px 20px 2px 20px;
+    line-height: 0;
+    opacity: 0.5;
+  }
+
+  .mdp-fgt {
+    width: 100%;
+    text-align: center;
+    color: gray;
+    font-style: italic;
+    margin-top: 15%;
+    opacity: 0.7;
+  }
+}
+
+/*Ecran S*/
+@media screen and (max-width: 480px) {
+  .right-panel {
+    display: none;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .left-panel {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin-left: 5px;
+    z-index: 1;
+  }
+
+  .nav-logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .lp-nav {
+    display: flex;
+    margin: 5px;
+    height: 70px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  ul {
+    width: 100%;
+    justify-content: space-evenly;
+    display: none;
+    align-content: center;
+  }
+
+  li a {
+    color: rgb(50, 45, 66);
+    text-decoration: none;
+  }
+
+  .fa-bars {
+    height: 100px;
+    width: 100px;
+    color: gray;
+    opacity: 0.8;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .lpntr-title {
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    align-content: center;
+  }
+
+  .lpntr-title h1 {
+    width: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 48px;
+  }
+
+  .lpntr-title p {
+    margin: 0 0 50px 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .lpntr-title a {
+    color: #666;
+    text-decoration: none;
+    font-style: italic;
+  }
+
+  .flex-container {
+    display: flex;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) 
+.lp-nav #myLinks {
+    display: none;
+  }*/
+
+  .form-container {
+    background: white;
+    width: 100%;
+    height: 58px;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0px 2px 50px 0px rgb(223, 223, 223);
+  }
+
+  .form {
+    width: 100%;
+    height: 42px;
+    display: flex;
+  }
+
+  .input-session {
+    opacity: 0.5;
+    height: 58px;
+    width: 90%;
+    border: 0px solid;
+    font-size: 18px;
+    background-color: transparent;
+    color: gray;
+  }
+
+  .btn-session {
+    align-content: center;
+    height: 50px;
+    margin: 4px;
+    border: 0px solid;
+    border-radius: 29px;
+    text-align: center;
+    width: 200px;
+    background-color: #66ffcc;
+    color: white;
+    font-weight: bold;
+  }
+
+  .fa-sign-in-alt {
+    color: gray;
+    margin: 20px 20px 2px 20px;
+    line-height: 0;
+    opacity: 0.5;
+  }
+
+  .mdp-fgt {
+    width: 100%;
+    text-align: center;
+    color: gray;
+    font-style: italic;
+    margin-top: 15%;
+    opacity: 0.7;
+  }
+}
+
+/*Ecran M*/
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  .right-panel {
+    display: none;
+  }
+
+  body {
+    background-color: blue;
+  }
+}
+
+/*Ecran L*/
+@media screen and (min-width: 901px) and (max-width: 1280px) {
+  body {
+    background-color: green;
+  }
+}

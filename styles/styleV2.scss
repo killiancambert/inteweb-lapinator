@@ -1,0 +1,291 @@
+html,
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+  min-width: 375px;
+  display: flex;
+}
+
+.left-panel {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  z-index: 2;
+
+  // NAVBAR
+
+  nav {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    flex-direction: row;
+
+    .nav-logo {
+      height: 50px;
+      width: 50px;
+      margin: auto;
+      padding: 10px;
+    }
+
+    ul {
+      width: 100%;
+      justify-content: space-evenly;
+      display: flex;
+      align-content: center;
+
+      li {
+        list-style: none;
+
+        a {
+          color: rgb(50, 45, 66);
+          text-decoration: none;
+
+          &:hover {
+            color: #0066ff;
+          }
+        }
+      }
+
+      .active {
+        border-bottom: 3px solid #0066ff;
+        color: #0066ff;
+      }
+    }
+
+    svg {
+      display: none;
+      padding: 10px;
+    }
+
+    .menu-mobile {
+      display: none;
+    }
+  }
+
+  //FORMULAIRE
+  .lpntr-title {
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    align-content: center;
+
+    h1 {
+      width: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-size: 48px;
+    }
+
+    p {
+      margin: 0 0 50px 0;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      font-size: 14px;
+    }
+
+    .mdp-fgt {
+      width: 100%;
+
+      a {
+        margin: auto;
+        margin-top: 25px;
+        color: #777777;
+        text-decoration: none;
+        font-style: italic;
+      }
+    }
+
+    .form-container {
+      background: white;
+      width: 110%;
+      height: 58px;
+      margin: 10px;
+      border-radius: 30px;
+      background-color: #fff;
+      box-shadow: 0px 2px 50px 0px rgb(223, 223, 223);
+
+      .form {
+        width: 110%;
+        height: 42px;
+        display: flex;
+
+        .input-session {
+          opacity: 0.5;
+          height: 58px;
+          width: 90%;
+          border: 0px solid;
+          font-size: 18px;
+          background-color: transparent;
+          color: gray;
+          outline: none;
+        }
+
+        .btn-session {
+          height: 50px;
+          width: 200px;
+          margin: 4px;
+          border: 0px solid;
+          border-radius: 29px;
+          text-align: center;
+          background-color: #66ffcc;
+          color: white;
+          font-weight: 700;
+
+          &:hover {
+            height: 50px;
+            width: 200px;
+            margin: 4px;
+            border: 0px solid;
+            border-radius: 29px;
+            text-align: center;
+            background-color: #29e6a7;
+            color: white;
+            font-weight: 700;
+          }
+        }
+
+        .input-icon {
+          color: gray;
+          margin: 28px 20px 2px 20px;
+          line-height: 0;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+//RIGHT PANEL
+.right-panel {
+  display: flex;
+  flex: 1.4;
+  z-index: 1;
+  background-image: url("../img/lapinator.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .left-panel {
+    .lpntr-title {
+      .form-container {
+        .form {
+          .input-icon {
+            display: flex;
+            margin: 28px 10px;
+          }
+          .input-session {
+            margin-left: 5px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left-panel {
+    background-image: url(../img/Group.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    nav {
+      justify-content: center;
+
+      .back-color {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        z-index: 2;
+      }
+
+      svg {
+        margin: auto 0;
+        display: flex;
+        right: 0;
+        z-index: 2;
+        background-color: transparent;
+      }
+
+      .nav-logo {
+        margin: auto 0;
+        z-index: 2;
+        background-color: transparent;
+      }
+
+      ul {
+        display: none;
+      }
+
+      .menu-mobile {
+        z-index: 1;
+        background-color: rgb(204,255,244);
+        display: none,;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        margin-top: 70px;
+        width: 100%;
+
+        ul {
+          display: flex;
+          padding: 0;
+          justify-content: space-around;
+          align-items: center;
+          flex-direction: column;
+
+          li {
+            margin: 20px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    .lpntr-title {
+      div {
+        display: flex;
+        margin-bottom: 50px;
+
+        p {
+          margin: 0 auto;
+        }
+      }
+      h1 {
+        text-align: center;
+      }
+
+      .form-container {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 120px;
+
+        .form {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-wrap: wrap;
+
+          .input-session {
+            width: 70%;
+          }
+
+          .btn-session {
+            margin: 40px auto;
+          }
+        }
+      }
+    }
+  }
+
+  .right-panel {
+    display: none;
+  }
+}
